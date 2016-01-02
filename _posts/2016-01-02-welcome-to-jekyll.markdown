@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello, Jekyll!"
 comments: false
+tags: 闲谈
 ---
 # Hello, World! And, hello, Jekyll.
 折腾了一天把Jekyll弄起来了，配了[jekyll-clean-dark](https://github.com/streetturtle/jekyll-clean-dark) Jekyll主题，About页面还没写好。。。  
