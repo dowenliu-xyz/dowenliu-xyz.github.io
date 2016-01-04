@@ -1,57 +1,11 @@
-
-sudo cp /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/var/cache/oracle-jdk* ./ -r
-
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-sudo rm -f webupd8team_ubuntu_java.gpg~
 sudo apt-get install ant audacity chromium-browser chromium-codecs-ffmpeg-extra exfat-fuse fcitx-table-wbpy filezilla flashplugin-installer geany gimp git gparted gstreamer0.10-fluendo-mp3 gstreamer0.10-plugins-bad gstreamer0.10-plugins-bad-multi gstreamer0.10-plugins-ugly gstreamer1.0-alsa gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-bad gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-ugly indicator-multiload keepass2 kuaipan4uk libsvn-java lvm2 maven meld mysql-client mysql-workbench nautilus-compare nethogs network-manager-openvpn nginx openssh-client openssh-server openssh-sftp-server oracle-java6-installer oracle-java7-installer oracle-java8-installer oracle-java8-set-default p7zip-full p7zip-rar p7zip postfix rapidsvn subversion tomboy ttf-wqy-* unison unison-gtk unrar vim virtualbox virtualbox-dkms vlc ttf-telugu-fonts ttf-oriya-fonts ttf-kannada-fonts ttf-bengali-fonts ttf-dejavu-extra ttf-dejavu ttf-xfree86-nonfree ttf-mscorefonts-installer unity-chromium-extension fcitx-table-all gimp-data-extras  git-doc gpart keepass2-doc ttf-baekmuk fonts-unfonts-extra fonts-unfonts-core ttf-kochi-gothic ttf-kochi-mincho subversion-tools virtualbox-guest-additions-iso
 
-ant version
-ant -version
-sudo cp /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/profile.d/ant_env.sh /etc/profile.d/
-sudo cp /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/profile.d/set_classpath.sh /etc/profile.d/
 sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/ssh/ssh_config /etc/ssh/ssh_config
 sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/ssh/sshd_config /etc/ssh/sshd_config
-ll /etc/sysctl.d/
 sudo cp /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/sysctl.d/60-* /etc/sysctl.d/
-ll /etc/sysctl.d/
 sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/environment /etc/environment
-sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/bash.bashrc /etc/bash.bashrc
-sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/profile /etc/profile
-sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/rc.local /etc/rc.local
-sudo meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/etc/sysctl.conf /etc/sysctl.conf
-sudo cp -ap /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/fast /
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/unison-sync ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.unison ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.ssh/ds* ./
-mv ds* .ssh/
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.ssh/github_rsa* ./.ssh/
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.ssh/gitlab_rsa* ./.ssh/
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.ssh/wfj_rsa* ./.ssh/
-cd .ssh/
-ll
-rm ds*
-mv ../temp/home_pc.ssh/ds-id* ./
-rm github_rsa*
-mv ../temp/home_pc.ssh/github* ./
-rm gitlab_rsa*
-mv ../temp/home_pc.ssh/gitlab-personal* ./
-rm wfj_rsa*
-mv ../temp/home_pc.ssh/wfj_rsa* ./
-ll
-cd
-sudo vim /etc/hosts
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.Genymobile ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.gnupg ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.ivy2 ./
 cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.m2 ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.local/share/applications ./.local/share/
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.local/share/tomboy ./.local/share/
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.subversion ./
-cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.thunderbird ./
-meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.bashrc ./.bashrc
-sudo rm -rf .local/share/meld/recent-z_eCvA.meldcmp
-meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.bashrc ./.bashrc
-sudo rm -rf .local/share/meld
 meld /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.bashrc ./.bashrc
 exit
 cp -a /media/liufl/976e6f09-498d-48e1-9a76-7b47f3ba0d47/home/liufl/.gitconfig ./
