@@ -49,6 +49,18 @@ $ sudo apt-get install oracle-java6-set-default # 切换为jdk6
 $ sudo apt-get install oracle-java7-set-default # 切换为jdk7
 $ sudo apt-get install oracle-java8-set-default # 切换为jdk8
 {% endhighlight %}
+WebUpd8的包已经为我们设置好了一批环境变量，不过没有设置`CLASSPATH`变量，在`/etc/profile.d`目录下建立`set_classpath.sh`并增加执行权限
+{% highlight bash %}
+$ cd /etc/profile.d
+$ sudo touch set_classpath.sh
+$ sudo chmod +x set_classpath.sh
+{% endhighlight%}
+在`set_classpath.sh`中录入如下内容
+{% highlight bash %}
+#!/bin/bash
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+{% endhighlight%}
 
 ## ant
 说实话，我工作中基本不使用ant，因为只用maven就已经满足我的需求了，安装ant也只是有时构建代码需要。  
