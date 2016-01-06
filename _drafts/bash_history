@@ -1,5 +1,3 @@
-sudo apt-get install ffmpeg
-ffmpeg -i "下川みくに - 残酷な天使のテーゼ.flac" -acodec libmp3lame -ab 320k "下川みくに - 残酷な天使のテーゼ.mp3"
 sudo apt-get install ruby ruby-dev make gcc nodejs
 gem source -r https://rubygems.org/
 gem source -a http://mirrors.aliyun.com/rubygems/
